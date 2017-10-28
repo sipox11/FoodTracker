@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -38,19 +39,23 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="hK7-Wc-ypa" secondAttribute="trailing" id="K6T-KF-0xD"/>
-                                    <constraint firstItem="hK7-Wc-ypa" firstAttribute="leading" secondItem="hV3-An-1ns" secondAttribute="leading" id="gji-nV-USc"/>
+                                    <constraint firstAttribute="trailing" secondItem="hK7-Wc-ypa" secondAttribute="trailing" id="nTL-N7-iqx"/>
+                                    <constraint firstItem="hK7-Wc-ypa" firstAttribute="leading" secondItem="hV3-An-1ns" secondAttribute="leading" id="nfR-w6-DzR"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hV3-An-1ns" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="N8I-YU-HS9"/>
-                            <constraint firstItem="hV3-An-1ns" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YEj-mB-Ro7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hV3-An-1ns" secondAttribute="trailing" constant="16" id="uIV-2r-4Hj"/>
+                            <constraint firstItem="hV3-An-1ns" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XEb-A6-B4l"/>
+                            <constraint firstItem="hV3-An-1ns" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="XIx-WH-9kQ"/>
+                            <constraint firstItem="hV3-An-1ns" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="zHx-0j-2NY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mealNameLabel" destination="KH8-Qn-lmY" id="B0E-cq-3b3"/>
+                        <outlet property="nameTextField" destination="hK7-Wc-ypa" id="2LH-i7-Sqe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
