@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hV3-An-1ns">
-                                <rect key="frame" x="16" y="40" width="343" height="424.5"/>
+                                <rect key="frame" x="16" y="40" width="343" height="447.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KH8-Qn-lmY">
                                         <rect key="frame" x="0.0" y="0.0" width="83.5" height="20.5"/>
@@ -41,14 +41,16 @@
                                             <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3fx-lN-PKC"/>
                                         </connections>
                                     </button>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" translatesAutoresizingMaskIntoConstraints="NO" id="2dJ-r9-bl1">
-                                        <rect key="frame" x="0.0" y="104.5" width="320" height="320"/>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="2dJ-r9-bl1">
+                                        <rect key="frame" x="0.0" y="104.5" width="343" height="343"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="2dJ-r9-bl1" secondAttribute="height" multiplier="1:1" id="Dw4-Kh-sLm"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="2dJ-r9-bl1" firstAttribute="leading" secondItem="hV3-An-1ns" secondAttribute="leading" id="VTU-2Y-OPA"/>
+                                    <constraint firstAttribute="trailing" secondItem="2dJ-r9-bl1" secondAttribute="trailing" id="a7z-uM-tak"/>
                                     <constraint firstAttribute="trailing" secondItem="hK7-Wc-ypa" secondAttribute="trailing" id="nTL-N7-iqx"/>
                                     <constraint firstItem="hK7-Wc-ypa" firstAttribute="leading" secondItem="hV3-An-1ns" secondAttribute="leading" id="nfR-w6-DzR"/>
                                 </constraints>
@@ -72,4 +74,7 @@
             <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="defaultPhoto" width="540" height="540"/>
+    </resources>
 </document>
