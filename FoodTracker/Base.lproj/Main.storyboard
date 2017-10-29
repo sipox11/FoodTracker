@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad10_5" orientation="landscape">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,14 +16,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hV3-An-1ns">
-                                <rect key="frame" x="16" y="40" width="1080" height="1199"/>
+                                <rect key="frame" x="16" y="40" width="343" height="439"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KH8-Qn-lmY">
-                                        <rect key="frame" x="498.5" y="0.0" width="83.5" height="21"/>
+                                        <rect key="frame" x="130" y="0.0" width="83.5" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="0Yr-Nu-mLq"/>
                                         </constraints>
@@ -32,7 +32,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hK7-Wc-ypa">
-                                        <rect key="frame" x="0.0" y="29" width="1080" height="30"/>
+                                        <rect key="frame" x="0.0" y="29" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="IGe-gm-dQ1"/>
                                         </constraints>
@@ -41,7 +41,7 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="2dJ-r9-bl1">
-                                        <rect key="frame" x="0.0" y="67" width="1080" height="1080"/>
+                                        <rect key="frame" x="11.5" y="67" width="320" height="320"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="2dJ-r9-bl1" secondAttribute="height" multiplier="1:1" id="hkK-po-Ezm"/>
@@ -51,7 +51,7 @@
                                         </connections>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yuE-jc-sUW" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
-                                        <rect key="frame" x="414" y="1155" width="252" height="44"/>
+                                        <rect key="frame" x="45.5" y="395" width="252" height="44"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="size" keyPath="starSize">
                                                 <size key="value" width="44" height="44"/>
@@ -63,9 +63,7 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="2dJ-r9-bl1" firstAttribute="leading" secondItem="hV3-An-1ns" secondAttribute="leading" id="4rM-pX-tZD"/>
                                     <constraint firstItem="hK7-Wc-ypa" firstAttribute="trailing" secondItem="hV3-An-1ns" secondAttribute="trailingMargin" id="OdE-fR-je5"/>
-                                    <constraint firstAttribute="trailing" secondItem="2dJ-r9-bl1" secondAttribute="trailing" id="ayF-7g-XSj"/>
                                     <constraint firstItem="hK7-Wc-ypa" firstAttribute="leading" secondItem="hV3-An-1ns" secondAttribute="leading" id="iOC-Zw-YvF"/>
                                 </constraints>
                             </stackView>
