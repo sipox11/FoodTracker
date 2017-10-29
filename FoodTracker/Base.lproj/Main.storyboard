@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,52 +18,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hV3-An-1ns">
-                                <rect key="frame" x="16" y="40" width="343" height="447.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hV3-An-1ns">
+                                <rect key="frame" x="16" y="40" width="343" height="425"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KH8-Qn-lmY">
-                                        <rect key="frame" x="0.0" y="0.0" width="83.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="83.5" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="0Yr-Nu-mLq"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hK7-Wc-ypa">
-                                        <rect key="frame" x="0.0" y="28.5" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="29" width="343" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="IGe-gm-dQ1"/>
+                                        </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCl-DO-y6s">
-                                        <rect key="frame" x="0.0" y="66.5" width="151" height="30"/>
+                                        <rect key="frame" x="0.0" y="67" width="151" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Zid-rD-PZw"/>
+                                        </constraints>
                                         <state key="normal" title="Set Default Label Text"/>
                                         <connections>
                                             <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3fx-lN-PKC"/>
                                         </connections>
                                     </button>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="2dJ-r9-bl1">
-                                        <rect key="frame" x="0.0" y="104.5" width="343" height="343"/>
+                                        <rect key="frame" x="0.0" y="105" width="343" height="320"/>
                                         <gestureRecognizers/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="2dJ-r9-bl1" secondAttribute="height" multiplier="1:1" id="Dw4-Kh-sLm"/>
-                                        </constraints>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="KOZ-HV-wzm" appends="YES" id="SzC-vT-FQa"/>
                                         </connections>
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="2dJ-r9-bl1" firstAttribute="leading" secondItem="hV3-An-1ns" secondAttribute="leading" id="VTU-2Y-OPA"/>
-                                    <constraint firstAttribute="trailing" secondItem="2dJ-r9-bl1" secondAttribute="trailing" id="a7z-uM-tak"/>
-                                    <constraint firstAttribute="trailing" secondItem="hK7-Wc-ypa" secondAttribute="trailing" id="nTL-N7-iqx"/>
-                                    <constraint firstItem="hK7-Wc-ypa" firstAttribute="leading" secondItem="hV3-An-1ns" secondAttribute="leading" id="nfR-w6-DzR"/>
+                                    <constraint firstItem="hK7-Wc-ypa" firstAttribute="trailing" secondItem="hV3-An-1ns" secondAttribute="trailingMargin" id="OdE-fR-je5"/>
+                                    <constraint firstItem="hK7-Wc-ypa" firstAttribute="trailing" secondItem="2dJ-r9-bl1" secondAttribute="trailing" id="yoB-7X-dEv"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hV3-An-1ns" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XEb-A6-B4l"/>
-                            <constraint firstItem="hV3-An-1ns" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="XIx-WH-9kQ"/>
-                            <constraint firstItem="hV3-An-1ns" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="zHx-0j-2NY"/>
+                            <constraint firstItem="hV3-An-1ns" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="CUd-n0-sf5"/>
+                            <constraint firstItem="hV3-An-1ns" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="PZc-op-GRd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hV3-An-1ns" secondAttribute="trailing" constant="16" id="lsh-2M-Rd4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
