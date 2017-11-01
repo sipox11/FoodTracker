@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F2214FB1FAA5521008E1A02 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2214FA1FAA5521008E1A02 /* MealTableViewCell.swift */; };
 		0F62FA691FA4A62D00E2441B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F62FA681FA4A62D00E2441B /* AppDelegate.swift */; };
 		0F62FA6B1FA4A62D00E2441B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F62FA6A1FA4A62D00E2441B /* ViewController.swift */; };
 		0F62FA6E1FA4A62D00E2441B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F62FA6C1FA4A62D00E2441B /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F2214FA1FAA5521008E1A02 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		0F62FA651FA4A62D00E2441B /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F62FA681FA4A62D00E2441B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F62FA6A1FA4A62D00E2441B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				0F62FA881FA4F7E000E2441B /* RatingControl.swift */,
 				0FABBDEC1FA63B3C00BADF80 /* Meal.swift */,
 				0F62FA6C1FA4A62D00E2441B /* Main.storyboard */,
+				0F2214FA1FAA5521008E1A02 /* MealTableViewCell.swift */,
 				0F62FA6F1FA4A62D00E2441B /* Assets.xcassets */,
 				0F62FA711FA4A62D00E2441B /* LaunchScreen.storyboard */,
 				0F62FA741FA4A62D00E2441B /* Info.plist */,
@@ -209,6 +212,7 @@
 				0F62FA6B1FA4A62D00E2441B /* ViewController.swift in Sources */,
 				0F62FA891FA4F7E000E2441B /* RatingControl.swift in Sources */,
 				0F62FA691FA4A62D00E2441B /* AppDelegate.swift in Sources */,
+				0F2214FB1FAA5521008E1A02 /* MealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
