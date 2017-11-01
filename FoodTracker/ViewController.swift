@@ -14,7 +14,6 @@ class ViewController: UIViewController, UITextFieldDelegate,
     //MARK: Properties
     
     @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var mealNameLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
     
@@ -34,8 +33,7 @@ class ViewController: UIViewController, UITextFieldDelegate,
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        // Read the text from the text field and assign display it in the label
-        mealNameLabel.text = textField.text
+        
     }
     
     //MARK: UIImagePickerControllerDelegate
