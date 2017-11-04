@@ -76,6 +76,9 @@ class MealViewController: UIViewController, UITextFieldDelegate,
     }
     
     // MARK: Navigation
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
     
     // Allows configuration of view controller before it's presented
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
