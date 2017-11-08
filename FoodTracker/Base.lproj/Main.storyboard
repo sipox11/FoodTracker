@@ -77,7 +77,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" preservesSuperviewLayoutMargins="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hV3-An-1ns">
+                            <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hV3-An-1ns">
                                 <rect key="frame" x="16" y="84" width="343" height="416"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hK7-Wc-ypa">
@@ -99,8 +99,8 @@
                                             <outletCollection property="gestureRecognizers" destination="KOZ-HV-wzm" appends="YES" id="SzC-vT-FQa"/>
                                         </connections>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yuE-jc-sUW" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
-                                        <rect key="frame" x="45.5" y="366" width="252" height="50"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yuE-jc-sUW" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                        <rect key="frame" x="46" y="366" width="251" height="50"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="size" keyPath="starSize">
                                                 <size key="value" width="44" height="44"/>
@@ -113,15 +113,17 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="hK7-Wc-ypa" firstAttribute="trailing" secondItem="hV3-An-1ns" secondAttribute="trailingMargin" id="OdE-fR-je5"/>
+                                    <constraint firstItem="yuE-jc-sUW" firstAttribute="leading" secondItem="hV3-An-1ns" secondAttribute="leading" constant="46" id="bK3-Mv-xUL"/>
                                     <constraint firstItem="hK7-Wc-ypa" firstAttribute="leading" secondItem="hV3-An-1ns" secondAttribute="leading" id="iOC-Zw-YvF"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hV3-An-1ns" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="CUd-n0-sf5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hV3-An-1ns" secondAttribute="trailing" constant="16" id="FPX-KE-0LJ"/>
                             <constraint firstItem="hV3-An-1ns" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="PZc-op-GRd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hV3-An-1ns" secondAttribute="trailing" constant="16" id="lsh-2M-Rd4"/>
+                            <constraint firstItem="hV3-An-1ns" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RTv-hs-Afo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hV3-An-1ns" secondAttribute="bottom" constant="167" id="tUg-1a-JGL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
